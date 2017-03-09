@@ -1,0 +1,17 @@
+{% extends "boby.html" %}
+{% load i18n %}
+
+{% block content %}
+    <div class="col-sm-6 col-sm-offset-3">
+        <form method="post" action="">
+          {% csrf_token %}
+          {{ form.as_p }}
+
+          <input type="submit" value="{% trans 'Войти' %}" />
+         <input type="hidden" name="next" value="" />
+        </form>
+        <p>{% trans "Забыли пароль" %}? <a href="{% url 'auth_password_reset' %}">{% trans "Сбросить" %}</a>!</p>
+        <p>{% trans "Не зарегистрирован" %}? <a href="{% url 'registration_register' %}">{% trans "Регистрация" %}</a>!</p>
+    </div>
+
+{% endblock %}

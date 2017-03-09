@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.footer {
+    background-image: url(/fff.jpg);
+    width: 862px;
+    height: 70px;
+    z-index:3;
+    position: absolute;
+    right: 0;
+    bottom: -370;
+    left: 0;
+    margin: auto;
+    font-family: Tahoma;
+}
+ 
+.main {
+    font-family: Tahoma;
+    background-color: #efe9f1;
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: 350px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    padding: 30px;
+    padding-right: 30px;
+    padding-top: 120px;
+    z-idex:1;
+    border: solid 1px black;
+    text-align: justify
+}
+ 
+.menu {
+    background-image: url(/f.jpg);
+    width: 862px;
+    height: 139px;
+    z-index:2;
+    position: absolute;
+    top: -504;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.box {
+    border: 1px solid blue;
+}
+.box:hover {
+    border-color: blue;
+}
+.st{
+div {
+    background: #33ffcc; /* Цвет фона */
+    outline: 2px solid #000; /* Чёрная рамка */
+    border: 3px solid #fff; /* Белая рамка */
+   }}

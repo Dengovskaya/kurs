@@ -1,0 +1,16 @@
+{% extends 'boby.html' %}
+{% block extrahead %}
+    {% load static %}
+    <link href="{% static 'css/forms.css' %}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <form id="form-login" method="POST" action=""  enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ user_form }}
+                <p><button class="btn btn-primary" type="submit">Сохранить</button></p>
+            </form>
+        </div>
+    </div>
+{% endblock %}
